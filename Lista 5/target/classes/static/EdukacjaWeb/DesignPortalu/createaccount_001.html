@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+         
+
+    
+        
+        
+    
+
+
+        <title wicket:id="pageTitle">Nowe konto :: Edukacja.CL :: Serwer uwierzytelnienia OAuth</title>    
+
+        
+        
+        
+        
+        
+        
+        
+    
+
+
+
+<link media="all" href="createaccount_001.css" type="text/css" rel="stylesheet">
+</head>
+<body>  
+
+    <!-- <div class="header">
+        <div class="title">
+            <span class="edukacja">JSOS</span>
+            <span class="oauth"></span>
+        </div>
+    </div> -->
+    
+        
+        <wicket:child><wicket:extend>
+    
+    <div class="centered wide top">
+        
+	    <form wicket:id="createAccountForm" id="createAccountForm1" method="post" action="https://oauth.pwr.edu.pl/oauth/wicket/page?1-1.IFormSubmitListener-createAccountForm"><div style="width: 0px; height: 0px; position: absolute; left: -100px; top: -100px; overflow: hidden;"><input name="createAccountForm1_hf_0" id="createAccountForm1_hf_0" type="hidden"></div>
+	    
+            <input wicket:id="oauth_request_url" value="http://edukacja.pwr.wroc.pl/EdukacjaWeb" name="oauth_request_url" type="hidden">
+        	<input wicket:id="oauth_consumer_key" value="C483406578E35464DYUVCLZPVHRCYXPB9Y3GNVXRONDQ7LOMQ2PVGPFZAIKDYQAJ6IKT03V1M7LK7OCLKH8FM5BKGOUMM7AU5YJ7PKOCABFNDSLVZSSLVL3N6FFMB6WR" name="oauth_consumer_key" type="hidden">
+		    <input wicket:id="oauth_token" value="R63508527VLEQULSOYHD70ET48X9LOY9U1QLQL2KYSPFMONHZHD4FYIS7H5K9WYKWB0HGOCNR7TTO1A4PBD0MH12JV60H14V3QX2CZ4QO6X4ZTWXTJLVD0MF76HYPHIVXQV11FVEIB4MBYZCFSVV2QABWE12GMMMXT509SBBUQHOZLRMYDTR8S6U5X3I2H1F4AMKRANAIDK1C2XVSUTPFSG3Q9ICACRZ049QWEWHRDTKV3PYRX7I9HJVJ5W1NE9JIUS8HUCJ8N9AV61I6QUKUAUKA6SKT6097LTCY2IZKGT5NKDQVRLIO44T0KSA0DTG82NU9JHR6NPIU7B6XD2HA5285LMYGBFSJGZW4VH2EB0JBFZYYVSBJWODO9TPVXKP3PFY2S9CP21MK273HFAZ8467QSMZS1SI1FIE88BNXTX3ZVH5P3P42QXUI1YVU1VQIJ1SBIQF9737ZODFWC3USQCJHGA2A6DGDYWAE8KYASC1EB9EE1QMS8A0ZBVLP3VM6ZIEWYD65FW71MYVI0P2FNGC9RV3CGKHSUGB9NLJHMUUU8VHBKO4RBYGQDH8EYOX9CIB9KFZNJX9WCTLBK83SJXJ8XJOL9HRZD53TBHY4LENOS12YQB6HLHIA2ZUUWRNX2DPNBJG6NQGBYM6NVU2VY9AF4YN78L1OSCB3LI4D2NTJ3OYXUWPV1XC7BDUJ5HUF3RFJ5A1XIVE2Y8DZUD29JEV4Q6NQ0YS6F839ZZVCS4XZ6Q66QXSPVPJTY2A59T4X4HBX89BNH08P42AG4FFWNC0DBDE8TZAWM9XFZIT8Y1F0RUA2IQ1X54BGVQ618MJ3A553K4O2HUWF6AGU3G5Z3LDHZ3H84DB87K4CYZ50KYCCFRAY6C1C7XLA9MCPI0BOF1R5ALUOFIBICNF6FIKCAXJG6G1H0GO0Z4HPD5MLUCVKK1HO4X1TXU5LHTMA2JOENS8QT2SAUGWVY05BD3AXBULHY3ZGPA0I44AE39ZZDYPVUAWVWW8EE9VLV86JDTS" name="oauth_token" type="hidden">
+		    <input wicket:id="username" value="" name="username" type="hidden">
+		    <input wicket:id="oauth_locale" value="" name="oauth_locale" type="hidden">
+	    
+	   		 <div class="panel">
+	   		 
+	   		 	<div class="avatar"></div>
+        
+		        
+		        	 <div class="formHeader">
+			            <div class="switches x-switch-group">
+					            <span class="x-switch">
+				                    <input wicket:id="validationType.PESEL" id="validationTypePESEL" class="x-input wicket-validationType5" name="validationType" value="radio11" checked="checked" type="radio">
+				                    <label wicket:id="validationType.PESEL.Label" for="validationTypePESEL" class="label radio-label x-label x-selected">Posiadam polskie obywatelstwo</label>
+			                    </span>
+			                    <span class="x-switch">
+			                        <input wicket:id="validationType.PASSPORT" id="validationTypePASSPORT" class="x-input wicket-validationType5" name="validationType" value="radio12" type="radio">
+			                        <label wicket:id="validationType.PASSPORT.Label" for="validationTypePASSPORT" class="label radio-label x-label x-deselected">Nie posiadam polskiego obywatelstwa</label>
+			                    </span>
+			            </div>
+			            
+			            <div class="clear"></div>
+		          	</div>       
+            	 
+            	<div class="panelCont">
+            		<h1 wicket:id="mainInformation" class="row mainInformation">Zakładasz nowe konto w systemie Edukacja.CL</h1> 
+			        <div wicket:id="komunikat" class="row komunikat"></div>
+			        
+	                <div class="row credentials">
+		                <div class="column left">
+				           <!-- label wicket:id="nameLabel" for="name" class="label">Name</label><br />-->
+			               <input wicket:id="name" class="credential" placeholder="Imię" maxlength="100" value="" name="name" type="text">
+			            </div>
+			        
+			            <div class="column right">
+		                    <!-- label wicket:id="surnameLabel" for="surname" class="label">Name</label><br />-->
+		                    <input wicket:id="surname" class="credential" placeholder="Nazwisko" maxlength="100" value="" name="surname" type="text"> 
+		                </div>
+		                
+	                	<div id="validationPanelPESEL" class="validationPanel">
+	                   		<!-- label wicket:id="peselLabel" id="peselLabel" for="pesel" class="label">PESEL</label><br />-->
+	                    	<input wicket:id="pesel" id="pesel" placeholder="PESEL" class="credential" maxlength="11" value="" name="pesel" type="text">
+		                    <div class="peselValidationDisabled">
+		                    	<input wicket:id="peselValidationDisabled" id="peselValidationDisabled" name="peselValidationDisabled" type="checkbox">
+		                    	<label wicket:id="peselValidationDisabledLabel" id="peselValidationDisabledLabel" for="peselValidationDisabled">Wyłącz kontrolę poprawności numeru PESEL</label>
+		                    </div>
+	                    </div>
+	
+	                    <div id="validationPanelPASSPORT" class="validationPanel">
+	                       
+		                	<div class="row credentials">	
+			                	<div class="left column">
+			                		<select wicket:id="nationality" id="nationality" class="credential" name="nationality">
+<option selected="selected" value="">Wybierz obywatelstwo</option>
+<option value="AF">afgańskie</option>
+<option value="AL">albańskie</option>
+<option value="DZ">algierskie</option>
+<option value="UM">amerykańskie (mniejsze odległe wyspy)</option>
+<option value="US">amerykańskie (USA)</option>
+<option value="AD">andorskie</option>
+<option value="AO">angolskie</option>
+<option value="AI">Anguilli</option>
+<option value="AQ">antarktydzkie</option>
+<option value="AG">Antigua i Barbuda</option>
+<option value="AN">Antyli Holenderskich</option>
+<option value="SA">Arabii Saudyjskiej</option>
+<option value="AR">argentyńskie</option>
+<option value="AM">armeńskie</option>
+<option value="AW">arubańskie</option>
+<option value="AU">australijskie</option>
+<option value="AT">austriackie</option>
+<option value="AZ">azerskie</option>
+<option value="BS">Bahamów</option>
+<option value="BH">Bahrajnu</option>
+<option value="BD">bangladeskie</option>
+<option value="BB">barbadoskie</option>
+<option value="BE">belgijskie</option>
+<option value="BZ">belizkie</option>
+<option value="BJ">benińskie</option>
+<option value="BM">bermudzkie</option>
+<option value="??">Bezpaństwowiec</option>
+<option value="BT">bhutańskie</option>
+<option value="BY">białoruskie</option>
+<option value="MM">birmańskie</option>
+<option value="BO">boliwijskie</option>
+<option value="BW">bostwańskie</option>
+<option value="BA">Bośni i Hercegowiny</option>
+<option value="BR">brazylijskie</option>
+<option value="BN">brunejskie</option>
+<option value="GB">brytyjskie</option>
+<option value="IO">brytyjskie Terytorium Oceanu Indyjskiego</option>
+<option value="VG">brytyjskie Wysp Dziewiczych</option>
+<option value="BG">bułgarskie</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="CL">chilijskie</option>
+<option value="CN">chińskie</option>
+<option value="HR">chorwackie</option>
+<option value="CY">cypryjskie</option>
+<option value="TD">czadzkie</option>
+<option value="CZZ">czarnogórskie</option>
+<option value="CZ">czeskie</option>
+<option value="DO">dominikańskie</option>
+<option value="DM">Dominiki</option>
+<option value="DK">duńskie</option>
+<option value="DJ">Dżibuti</option>
+<option value="EG">egipskie</option>
+<option value="EC">ekwadorskie</option>
+<option value="ER">erytrejskie</option>
+<option value="EE">estońskie</option>
+<option value="ET">etiopskie</option>
+<option value="FK">falklandzkie</option>
+<option value="FM">Federacji Mikronezji</option>
+<option value="FJ">Fidżi</option>
+<option value="PH">filipińskie</option>
+<option value="FI">fińskie</option>
+<option value="FR">francuskie</option>
+<option value="FX">francuskie Metropolii</option>
+<option value="TF">francuskie Terytoriów Południowych</option>
+<option value="GA">Gabonu</option>
+<option value="GM">Gambii</option>
+<option value="GS">Georgii Południowej i Wysp Sandwich Południowych</option>
+<option value="GH">Ghany</option>
+<option value="GI">gibraltarskie</option>
+<option value="GR">greckie</option>
+<option value="GD">grenadzkie</option>
+<option value="GL">grenlandzkie</option>
+<option value="GE">gruzińskie</option>
+<option value="GU">Guamu</option>
+<option value="GY">gujańskie</option>
+<option value="GF">gujańskie (Gujana Francuska)</option>
+<option value="GP">gwadelupskie</option>
+<option value="GT">gwatemalskie</option>
+<option value="GN">gwinejskie</option>
+<option value="GW">gwinejskie (Gwinea Bissau)</option>
+<option value="GQ">gwinejskie (Gwinea Równikowa)</option>
+<option value="HT">haitańskie</option>
+<option value="ES">hiszpańskie</option>
+<option value="NL">holenderskie</option>
+<option value="HN">honduraskie</option>
+<option value="HK">hongkongckie</option>
+<option value="ID">indonezyjskie</option>
+<option value="IN">indyjskie</option>
+<option value="IQ">irackie</option>
+<option value="IR">irańskie</option>
+<option value="IE">irlandzkie</option>
+<option value="IS">islandzkie</option>
+<option value="IL">izraelskie</option>
+<option value="JM">jamajskie</option>
+<option value="JP">japońskie</option>
+<option value="YE">jemeńskie</option>
+<option value="JO">jordańskie</option>
+<option value="KY">kajmańskie</option>
+<option value="KH">kambodżańskie</option>
+<option value="CM">kameruńskie</option>
+<option value="CA">kanadyjskie</option>
+<option value="QA">katarskie</option>
+<option value="KZ">kazachskie</option>
+<option value="KE">kenijskie</option>
+<option value="KG">kirgiskie</option>
+<option value="KI">Kiribati</option>
+<option value="CO">kolumbijskie</option>
+<option value="KM">komorskie</option>
+<option value="CG">kongijskie</option>
+<option value="KR">koreańskie (Korea Południowa)</option>
+<option value="KP">koreańskie (Korea Północna)</option>
+<option value="KV">kosowskie (Kosowa)</option>
+<option value="CR">kostarykańskie</option>
+<option value="CU">kubańskie</option>
+<option value="KW">kuwejckie</option>
+<option value="LA">laoskie</option>
+<option value="LS">Lesotho</option>
+<option value="LB">libańskie</option>
+<option value="LR">liberyjskie</option>
+<option value="LY">libijskie</option>
+<option value="LI">lichtensteinskie</option>
+<option value="LT">litewskie</option>
+<option value="LU">luksemburdzkie</option>
+<option value="LV">łotewskie</option>
+<option value="MK">macedońskie</option>
+<option value="MG">madagaskarskie</option>
+<option value="YT">Majotta</option>
+<option value="MO">Makau</option>
+<option value="MW">Malawi</option>
+<option value="MV">malediwskie</option>
+<option value="MY">malezyjskie</option>
+<option value="ML">malijskie</option>
+<option value="MT">maltańskie</option>
+<option value="MP">Marian Północnych</option>
+<option value="MA">marokańskie</option>
+<option value="MQ">Martyniki</option>
+<option value="MR">mauretańskie</option>
+<option value="MU">Mauritiusu</option>
+<option value="MX">meksykańskie</option>
+<option value="MD">mołdawskie</option>
+<option value="MC">monakijskie</option>
+<option value="MN">mongolskie</option>
+<option value="MS">Montserrat</option>
+<option value="MZ">mozambickie</option>
+<option value="NA">namibijskie</option>
+<option value="NR">Nauru</option>
+<option value="NP">nepalskie</option>
+<option value="DE">niemieckie</option>
+<option value="NE">nigerskie</option>
+<option value="NG">nigeryjskie</option>
+<option value="NI">nikaraguańskie</option>
+<option value="NU">Niue</option>
+<option value="NF">Norfolku</option>
+<option value="NO">norweskie</option>
+<option value="NC">nowokaledońskie</option>
+<option value="NZ">nowozelandzkie</option>
+<option value="OM">omańskie</option>
+<option value="PK">pakistańskie</option>
+<option value="PW">Palau</option>
+<option value="PS">palestyńskie</option>
+<option value="PA">panamskie</option>
+<option value="PG">Papui Nowej Gwinei</option>
+<option value="PY">paragwajskie</option>
+<option value="PE">peruwiańskie</option>
+<option value="PN">Pitcaim</option>
+<option value="PF">Polinezji Francuskiej</option>
+<option value="ZA">południowoafrykańskie</option>
+<option value="PR">portorykańskie</option>
+<option value="PT">portugalskie</option>
+<option value="CV">Republiki Zielonego Przylądka</option>
+<option value="RE">Reunion</option>
+<option value="RU">rosyjskie</option>
+<option value="RD">Ruandy</option>
+<option value="RO">rumuńskie</option>
+<option value="RW">rwandyjskie</option>
+<option value="KN">Saint Christopher /Kitts/ i Nevis</option>
+<option value="LC">Saint Lucia</option>
+<option value="PM">Saint Pierre i Miquelon</option>
+<option value="VC">Saint Vincent i Grenadyny</option>
+<option value="SV">salwadorskie</option>
+<option value="AS">Samoa Amerykańskie</option>
+<option value="WS">Samoa Zachodnie</option>
+<option value="SM">San Marino</option>
+<option value="SN">senegalskie</option>
+<option value="SRB">Serbii</option>
+<option value="YU">Serbii i Czarnogóry</option>
+<option value="RS">serbskie</option>
+<option value="SC">Seszeli</option>
+<option value="SL">Sierra Leone</option>
+<option value="SG">Singapuru</option>
+<option value="SK">słowackie</option>
+<option value="SI">słoweńskie</option>
+<option value="SO">somalijskie</option>
+<option value="LK">Sri Lanki</option>
+<option value="SZ">Suazi (Ngwane)</option>
+<option value="SD">sudańskie</option>
+<option value="SR">Surinamu</option>
+<option value="SJ">Svalbard i W-p Meyena</option>
+<option value="SY">syryjskie</option>
+<option value="CH">szwajcarskie</option>
+<option value="SE">szwedzkie</option>
+<option value="CF">środkowoafrykańskie</option>
+<option value="SH">Świętej Heleny</option>
+<option value="TJ">tadżyckie</option>
+<option value="TH">tajskie</option>
+<option value="TW">tajwańskie</option>
+<option value="TZ">tanzańskie</option>
+<option value="TP">Timoru</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trynidad i Tobago</option>
+<option value="TN">tunezyjskie</option>
+<option value="TR">tureckie</option>
+<option value="TM">turkmeńskie</option>
+<option value="TC">Turks i Caicos</option>
+<option value="TV">Tuvalu</option>
+<option value="UG">ugandzkie</option>
+<option value="UA">ukraińskie</option>
+<option value="UY">urugwajskie</option>
+<option value="UZ">uzbeckie</option>
+<option value="VU">Vanuatu</option>
+<option value="WF">Wallis i Futuna</option>
+<option value="VA">watykańskie</option>
+<option value="VE">wenezuelskie</option>
+<option value="HU">węgierskie</option>
+<option value="VN">wietnamskie</option>
+<option value="IT">włoskie</option>
+<option value="CI">Wybrzeża Kości Słoniowej</option>
+<option value="BV">Wysp Bouveta</option>
+<option value="CX">Wysp Bożego Narodzenia</option>
+<option value="CK">Wysp Cooka</option>
+<option value="VI">Wysp Dziewiczych - USA</option>
+<option value="FO">Wysp Faroe</option>
+<option value="HM">Wysp Heard i Mc Donald (Australia)</option>
+<option value="CC">Wysp Kokosowe</option>
+<option value="MH">Wysp Marshalla</option>
+<option value="SB">Wysp Salomona</option>
+<option value="ST">Wysp Świętego Tomasza i Książęcej</option>
+<option value="EH">zachodniosaharyjskie</option>
+<option value="CD">zairskie</option>
+<option value="ZM">zambijskie</option>
+<option value="ZW">Zimbabwe</option>
+<option value="AE">Zjednoczonych Emiratów Arabskich</option>
+</select>
+		                        </div>		                      
+				                <div class="clear"></div>
+	                        </div>
+	                        
+	                        <div class="row credentials">
+		                        <div class="left column">	
+			                        <select wicket:id="documentType" id="documentType" class="credential" name="documentType">
+<option selected="selected" value="">Wybierz rodzaj dokumentu tożsamości</option>
+<option value="DC">Dokument cudzoziemca</option>
+<option value="DW">Dowód osobisty</option>
+<option value="DT">Dowód tymczasowy</option>
+<option value="KP">Karta pobytu</option>
+<option value="PA">Paszport</option>
+<option value="PP">Polski dokument podróży dla cudzoziemca</option>
+<option value="PT">Polski dokument tożsamości cudzoziemca</option>
+<option value="PJ">Prawo jazdy</option>
+<option value="TP">Tymczasowy polski dokument podróży dla cudzoziemca</option>
+</select>
+			                	</div>
+			                    <div class="right column">
+				                    <input wicket:id="documentSeries" id="documentSeries" placeholder="Seria dokumentu tożsamosci" class="credential" maxlength="20" value="" name="documentSeries" type="text">
+				                </div>
+				                <div class="clear"></div>
+				            </div>
+			                
+			                <div class="row credentials">
+				                <div class="right column">
+				                    <input wicket:id="documentNumber" id="documentNumber" placeholder="Numer dokumentu tożsamosci" class="credential" maxlength="30" value="" name="documentNumber" type="text">
+				                </div>
+				                <div class="clear"></div>
+				            </div>
+		                	
+	                	</div>
+		                
+		                <div class="clear"></div>
+			         </div>
+            
+		            <div class="row credentials">
+		                <div class="left column">
+			                <!-- label wicket:id="emailLabel" for="email" class="label">Adres email</label><br />-->
+			                <input wicket:id="email" id="email" placeholder="Adres email" class="credential" maxlength="60" value="" name="email" type="text">
+			            </div>
+			            <div class="right column">
+			                <!-- label wicket:id="emailVerificationLabel" for="emailVerification" class="label">Adres email</label><br />-->
+		                    <input wicket:id="emailVerification" id="emailVerification" placeholder="Powtórz adres email" class="credential" maxlength="60" value="" name="emailVerification" type="text">
+		                </div>
+		                <div class="clear"></div>
+		            </div>
+		
+		            <div class="row credentials">
+		                <div class="left column">
+		                    <!-- label wicket:id="captchaLabel" for="captcha" class="label">Kod z obrazka</label><br />-->
+		                    <input wicket:id="captcha" id="captcha" placeholder="Przepisz kod z obrazka" class="credential" maxlength="35" value="" name="captcha" type="text">
+		                </div>
+		                <div class="clear">
+		                    <img wicket:id="captchaImage" id="captchaImage6" src="page">
+		                    <input wicket:id="newCaptchaButtonLabel" class="button action-button" name="newCaptchaButtonLabel" id="newCaptchaButtonLabel7" value="Odśwież obrazek" onclick="var wcall=wicketSubmitFormById('createAccountForm1', 'wicket/page?1-1.IBehaviorListener.0-createAccountForm-newCaptchaButtonLabel', 'newCaptchaButtonLabel' ,function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$$(this)&amp;&amp;Wicket.$$('createAccountForm1')}.bind(this));;; return false;" type="button">
+		                </div>
+		            </div>
+		            
+		            <div class="row dataProcessingAgreement">
+		                <input wicket:id="dataProcessingAgreement1" id="dataProcessingAgreement1" name="dataProcessingAgreement1" type="checkbox">
+		                <label wicket:id="dataProcessingAgreement1Label" for="dataProcessingAgreement1">Oświadczam, że poprzez podanie moich danych osobowych w toku procedury rekrutacji na studia na Politechnice Wrocławskiej - tak na stronie niniejszej jak i na stronach następnych (w tym wypełniając udostępniany mi formularz) - wyrażam zgodę na przetwarzanie moich danych osobowych oraz wizerunku odpowiednio do obowiązujących na terytorium RP przepisów - w tym szczególnie dotyczących ochrony danych osobowych osób fizycznych tj. m.in. ustawy z 29 sierpnia 1997 r. o ochronie danych osobowych (j. t. Dz. U. z 2015 r. poz. 2135 ze zm.). Oświadczam równocześnie, że zostałem/-am poinformowany/-a o tym, że:</label>
+		                <ul style="list-style-type: circle; padding-left: 12px;">
+		                	<li><label wicket:id="dataProcessingAgreement1Label1">Administratorem Danych Osobowych jest Politechnika Wrocławska, reprezentowana przez Rektora Politechniki Wrocławskiej, z siedzibą przy Wybrzeżu Wyspiańskiego 27 we Wrocławiu, których dane kontaktowe (jak też i dane Administratora Bezpieczeństwa Informacji) ujawniono w publicznym rejestrze krajowego organu właściwego w sprawach ochrony danych osobowych;</label></li>
+		                	<li><label wicket:id="dataProcessingAgreement1Label2">dane osobowe udostępniam Politechnice Wrocławskiej w związku z (a) procesem rekrutacji i świadczenia na moją rzecz usług edukacyjnych, (b) prowadzeniem przez ministra właściwego do spraw szkolnictwa wyższego Systemu Informacji o Szkolnictwie Wyższym w ramach Zintegrowanego Systemu Informacji o Nauce i Szkolnictwie Wyższym "POL-on" oraz (c) w związku z monitorowaniem karier absolwentów i (d) prowadzeniem dokumentacji toku studiów - tj. w celach określonych w szczególności w art. 13b, 34a, 49 i 88  w zw. z art. 192 ustawy z dnia 27 lipca 2005 r. Prawo o szkolnictwie wyższym (j.t. Dz. U. z 2012 r. poz. 572 z późn. zm.);</label></li>
+		                	<li><label wicket:id="dataProcessingAgreement1Label3">dane osobowe udostępniam Politechnice Wrocławskiej na okres rekrutacji na studia przy czym okres przetwarzania moich danych może być wydłużony o czas studiowania a także (po ukończeniu studiów) o dalsze okresy niezbędne dla monitorowania karier zawodowych absolwentów. Poinformowano mnie, że po zawarciu umowy o świadczenie usług edukacyjnych wystąpią odrębne przesłanki do przetwarzania  - w tym będą to przesłanki ustanowione w przepisach związanych z prowadzeniem dokumentacji toku studiów i z monitorowaniem karier zawodowych absolwentów uczelni wyższych;</label></li>
+		                	<li><label wicket:id="dataProcessingAgreement1Label4">odbiorcą moich danych osobowych może być minister właściwy do spraw szkolnictwa wyższego oraz Zakład Ubezpieczeń Społecznych;</label></li>
+		                	<li><label wicket:id="dataProcessingAgreement1Label5">służy mi prawo dostępu do treści moich danych, jak też prawo do ich poprawiania i zmiany, a w przyszłości może mi służyć także prawo usunięcia, przeniesienia lub ograniczenia przetwarzania danych (w związku z regulacjami Rozporządzenia Parlamentu Europejskiego i Rady (UE) nr 2016/679 z 27 kwietnia 2016 r.);</label></li>
+		                	<li><label wicket:id="dataProcessingAgreement1Label6">podanie danych osobowych jest niezbędne do wypełnienia obowiązków Uczelni określonych ustawą Prawo o szkolnictwie wyższym (oraz przepisami wykonawczymi wydanymi na jej podstawie), a po przyjęciu na studia będzie także niezbędne do zawarcia i wykonania umowy o świadczenie usług edukacyjnych;</label></li>
+		                	<li><label wicket:id="dataProcessingAgreement1Label7">podanie przeze mnie moich danych jest (1) dobrowolne, (2) pozostaje w związku z moim uprawnieniem do udziału w dobrowolnej rekrutacji na studia oraz (3) jest niezbędne dla podjęcia działań przed zawarciem umowy o świadczenie usług edukacyjnych, którą zawrę w przypadku pozytywnego zakończenia procedury rekrutacji;</label></li>
+		                	<li><label wicket:id="dataProcessingAgreement1Label8">konsekwencjami niepodania danych i nieudzielenia niniejszej zgody na ich przetwarzanie byłyby: (1) brak możliwości przeprowadzenia rekrutacji na studia, (2) niemożność zawarcia umowy na świadczenie usług edukacyjnych, a w konsekwencji (3) brak możliwości zrealizowania przez ww. Administratora Danych Osobowych norm przepisów powszechnych.</label></li>
+		                </ul>
+			        </div>
+
+			        <div class="row dataProcessingAgreement">
+		                <input wicket:id="schoolResponsibilityAgreement" id="schoolResponsibilityAgreement" name="schoolResponsibilityAgreement" type="checkbox">
+		                <label wicket:id="schoolResponsibilityAgreementLabel" for="schoolResponsibilityAgreement">Wyrażam zgodę na przetwarzanie moich danych osobowych (w sposób określony powyżej) przez Politechnikę Wrocławską także dla potrzeb mojego uczestnictwa w kolejnych rekrutacjach, co jest jednoznaczne z uprawnieniem Uczelni do przetwarzania moich danych, profilowania oferty dostosowanej do moich potrzeb (w tym w sposób zautomatyzowany) i do przesyłania mi w przyszłości informacji o kolejnych rekrutacjach i ofercie edukacyjnej Politechniki Wrocławskiej.</label>
+			        </div>
+			        
+			        <div class="row dataProcessingAgreement">
+		                <input wicket:id="userResponsibilityAgreement" id="userResponsibilityAgreement" name="userResponsibilityAgreement" type="checkbox">
+		                <label wicket:id="userResponsibilityAgreementLabel" for="userResponsibilityAgreement">Rozumiem i przyjmuję do wiadomości, że Politechnika Wrocławska niniejszym zastrzega, że nie ponosi (i nie będzie ponosić w przyszłości) jakiejkolwiek odpowiedzialności z tytułu podania przez kandydata na studia danych nieprawdziwych lub błędnych oraz z tytułu składania przez kandydata na studia oraz studenta oświadczeń nieprawdziwych. Rozumiem, że na podstawie art. 233 i 270 ustawy z dnia 6 czerwca 1997 r. Kodeks karny (Dz. U. z 1997 r. Nr 88 poz. 553 z późn.zm.) mogę ponieść odpowiedzialność za składanie nieprawdziwych oświadczeń, przerabianie dokumentu i używanie go jako autentycznego, podawanie błędnych lub nieprawdziwych danych, składanie nieprawdziwych oświadczeń (w tym w związku z postępowaniem rekrutacyjnym i podczas studiów).			</label>
+			        </div>
+
+			        <div class="row">
+		                <div class="left column">
+		                    <a href="https://oauth.pwr.edu.pl/oauth/error?error_redirect_url=http://edukacja.pwr.wroc.pl/EdukacjaWeb?oauth_consumer_key%3DC483406578E35464DYUVCLZPVHRCYXPB9Y3GNVXRONDQ7LOMQ2PVGPFZAIKDYQAJ6IKT03V1M7LK7OCLKH8FM5BKGOUMM7AU5YJ7PKOCABFNDSLVZSSLVL3N6FFMB6WR%26oauth_token%3DR63508527VLEQULSOYHD70ET48X9LOY9U1QLQL2KYSPFMONHZHD4FYIS7H5K9WYKWB0HGOCNR7TTO1A4PBD0MH12JV60H14V3QX2CZ4QO6X4ZTWXTJLVD0MF76HYPHIVXQV11FVEIB4MBYZCFSVV2QABWE12GMMMXT509SBBUQHOZLRMYDTR8S6U5X3I2H1F4AMKRANAIDK1C2XVSUTPFSG3Q9ICACRZ049QWEWHRDTKV3PYRX7I9HJVJ5W1NE9JIUS8HUCJ8N9AV61I6QUKUAUKA6SKT6097LTCY2IZKGT5NKDQVRLIO44T0KSA0DTG82NU9JHR6NPIU7B6XD2HA5285LMYGBFSJGZW4VH2EB0JBFZYYVSBJWODO9TPVXKP3PFY2S9CP21MK273HFAZ8467QSMZS1SI1FIE88BNXTX3ZVH5P3P42QXUI1YVU1VQIJ1SBIQF9737ZODFWC3USQCJHGA2A6DGDYWAE8KYASC1EB9EE1QMS8A0ZBVLP3VM6ZIEWYD65FW71MYVI0P2FNGC9RV3CGKHSUGB9NLJHMUUU8VHBKO4RBYGQDH8EYOX9CIB9KFZNJX9WCTLBK83SJXJ8XJOL9HRZD53TBHY4LENOS12YQB6HLHIA2ZUUWRNX2DPNBJG6NQGBYM6NVU2VY9AF4YN78L1OSCB3LI4D2NTJ3OYXUWPV1XC7BDUJ5HUF3RFJ5A1XIVE2Y8DZUD29JEV4Q6NQ0YS6F839ZZVCS4XZ6Q66QXSPVPJTY2A59T4X4HBX89BNH08P42AG4FFWNC0DBDE8TZAWM9XFZIT8Y1F0RUA2IQ1X54BGVQ618MJ3A553K4O2HUWF6AGU3G5Z3LDHZ3H84DB87K4CYZ50KYCCFRAY6C1C7XLA9MCPI0BOF1R5ALUOFIBICNF6FIKCAXJG6G1H0GO0Z4HPD5MLUCVKK1HO4X1TXU5LHTMA2JOENS8QT2SAUGWVY05BD3AXBULHY3ZGPA0I44AE39ZZDYPVUAWVWW8EE9VLV86JDTS" wicket:id="doNotAgree">
+		                    	<span wicket:id="doNotAgreeLabel">Nie wyrażam zgody na przetwarzanie danych osobowych</span>
+		                    </a>									               		
+		                </div>
+		                <div class="right column">
+		                    <input wicket:id="submitButton" value="Utwórz konto" class="button action-button" name="submitButton" id="submitButton8" type="submit">
+		                </div>
+		                
+		                <div class="clear"></div>
+		            </div>
+           		</div>
+           </div>
+	    </form>
+	    
+	    </div>  
+	    
+    </wicket:extend></wicket:child>
+             
+    
+    <div class="footer">
+       <div class="content">
+           <div class="column left">
+               <span>JSOS OAuth Server v1.00</span>
+           </div>
+           
+           <div class="column right">
+               <span class="copy">copyright © Sygnity S.A.</span>
+           </div>
+       </div>
+     
+    </div>
+
+</body>
+</html>

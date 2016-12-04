@@ -1,0 +1,4 @@
+3. Kto siê da nabraæ na phishing?
+- osoby nie zaznajomione z polityk¹ danej strony (nigdy nie bêdziemy wysy³aæ do ciebie maili z proœb¹ o potwierdzenie to¿samoœci etc.)
+- osoby, które nie s¹ zaznajomione ze zjawiskiem phishingu
+- u¿ytkownicy, którzy nie s¹ chronieni przed spamem przez serwer pocztowy i klikaj¹ w odnoœniki do stron podane w szkodliwych mailach

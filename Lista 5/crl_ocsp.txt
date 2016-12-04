@@ -1,0 +1,11 @@
+4. CRL - certificate revocation list
+Lista uniewa¿nionych certyfikatów, publikowana cyklicznie przec Certificate Authority. Zawiera numery seryjne uniewa¿nionych b¹dŸ wstrzymanych certyfikatów.
+
+Po wstrzymaniu w³aœciciel certyfikatu mo¿e siê ubiegaæ o przywrócenie, uniewa¿nienie jest nieodwracalne.
+
+OCSP - online certificate status protocol
+Protokó³ komunikacyjny miêdzy klientem CA a CA, opisuj¹cy jak wygl¹da zapytanie o status certyfikatu i jak wygl¹da odpowiedŸ, zwracana przez CA.
+
+Wynik weryfikacji mo¿e byæ nastêpuj¹cy: "poprawny", "uniewa¿niony", "nieznany"
+
+Us³uga OCSP jest bezpieczniejsza i pewniejsza, szybciej reaguje na zmianê statusu certyfikatu ni¿ CRL.

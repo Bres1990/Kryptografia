@@ -1,0 +1,2 @@
+9. Atak downgrade na TLS
+Wymuszenie uruchomienia trybu kompatybilnoœci ze starszymi systemami w celu uruchomienia starszej, mniej bezpiecznej wersji protoko³u komunikacyjnego i zwiêkszenia podatnoœci na atak.

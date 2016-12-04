@@ -1,0 +1,24 @@
+8. Co siê stanie, gdy pewne CA wydaje certyfikaty w oparciu o s³abe funkcje haszuj¹ce np. MD5?
+Wykorzystuj¹c zjawisko kolizji, czyli sytuacji, gdy dwie ró¿ne wiadomoœci poddane dzia³aniu funkcji hashuj¹cej zwracaj¹ ten sam hash, mo¿na podszyæ siê pod CA
+
+Dlaczego?
+
+Struktura CA
+
+root key --podpisuje--> intermediate key --podpisuje--> ¿¹dania serwerów (csr)
+
+Intermediate key ma certyfikat podpisany przez root key, który bêdziemy atakowaæ (intermediate_cert)
+Struktura certyfikatu
+
+csr = klucz publiczny + informacje (nazwa, miasto, organizacja etc.)
+certyfikat = csr + podpis
+podpis = Enc(klucz prywatny CA, hash(csr))
+
+Dobieramy nasz_csr tak, ¿eby jego hash kolidowa³ z csr certyfikatu poœredniego CA (intermediate_csr wyci¹gamy z intermediate_cert, który jest ogólnodostêpny)
+
+Przesy³aj¹c do CA nasz_csr otrzymamy taki sam podpis, jak intermediate_cert
+(dla przypomnienia:
+    hash(nasz_csr) = hash(intermediate_csr)
+    Enc(klucz prywatny CA, hash(nasz_csr)) = Enc(klucz prywatny CA, hash(intermediate_csr))
+
+Mo¿emy siê przedstawiaæ jako CA i wydawaæ fa³szywe certyfikaty

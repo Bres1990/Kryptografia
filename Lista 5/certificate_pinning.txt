@@ -1,0 +1,15 @@
+1. Czym jest certificate pinning? dlaczego siê go stosuje?
+Certificate Pinning to mechanizm maj¹cy na celu obronê przed atakami typu "man in the middle". Polega na tym, ¿e klient ufa ograniczonemu zbiorowi certyfikatów i nie przyjmuje dla danego serwera innych, nawet podpisanych przez to samo zaufane CA. 
+
+Wystêpuje w ró¿nych wersjach
+1) po standardowej weryfikacji certyfikatu, klucz publiczny zawarty w certyfikacie jest porównywany z zaufanymi hashami kluczy publicznych zwi¹zanych z danym serwerem. Hashe zwykle s¹ dostarczane wraz z aplikacj¹ (np. przegl¹dark¹).
+
+2) po pierwszej wizycie na danym serwerze klient kopiuje certyfikat do zbioru zaufanych. Podczas kolejnych sesji porównuje certyfikat serwera z zaufanym.
+
+3) (Moxie Marlinspike & Trevor Perrin) TACK
+Admin serwera podpisuje wiadomoœæ, zawieraj¹c¹ klucz publiczny i nazwê serwera. Tym samym gwarantuje, ¿e klucz publiczny nie zmieni siê przez pewien czas. Wiadomoœæ rozsy³a na pocz¹tku ka¿dej sesji. Klient weryfikuje klucz publiczny z wiadomoœci z kluczem publicznym z certyfikatu. 
+
+Zalety:
+- Admin mo¿e w ka¿dej chwili podmieniæ certyfikat i zmieniæ wiadomoœæ, klienci nie musz¹ czekaæ na nowy update do przegl¹darki, zawieraj¹cy bezpieczny hash
+- Admin mo¿e w ka¿dej chwili zmieniæ CA i wygenerowaæ nowy certyfikat
+

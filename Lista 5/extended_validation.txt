@@ -1,0 +1,5 @@
+2. Czym jest extended validation dla certyfikatów SSL?
+To najwy¿szy poziom zabezpieczeñ dla certyfikatów SSL. Polega na tym, ¿e wniosek do urzêdu certyfikacji (CA) musi spe³niaæ specjalne, rygorystyczne warunki, aby certyfikat zosta³ podpisany. Zwykle osoba chc¹ca otrzymaæ taki certyfikat, musi m.in. fizycznie potwierdziæ swoj¹ to¿samoœæ, wykazaæ, ¿e jest przedstawicielem organizacji, ubiegaj¹cej siê o certyfikat, ¿e ma pe³n¹ kontrolê nad dan¹ domen¹.
+
+Certyfikaty SSL s¹ wystawiane tylko dla pe³nych nazw (quallfied domain name).
+No REGEXP, * , % etc.

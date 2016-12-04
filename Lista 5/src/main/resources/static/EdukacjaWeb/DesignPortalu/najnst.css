@@ -1,0 +1,140 @@
+/* ::::: http://ofertypracy.pwr.edu.pl/_layouts/1045/styles/Themable/corev4.css?rev=Q813YQ2S9Zy7htTVOplzsg%3D%3D ::::: */
+
+body, form { margin: 0px; }
+hr { color: rgb(0, 51, 153); height: 2px; }
+.ms-quicklaunchouter { border: medium none; margin-bottom: 5px; }
+.ms-quicklaunchouter { margin: 0px 1px 2px; }
+.ms-quickLaunch { padding-top: 5px; }
+td.ms-titleareaframe, div.ms-titleareaframe, .ms-pagetitleareaframe { background: rgb(214, 232, 255) url('bgximg.png') repeat-x scroll 0px -461px; text-align: left; }
+.ms-sitemapdirectional, .ms-sitemapdirectional a { unicode-bidi: embed; }
+.ms-bodyareacell { vertical-align: top; }
+.ms-WPBody { font-size: 8pt; font-family: verdana,arial,helvetica,sans-serif; }
+.ms-WPBody table { font-size: 1em; }
+.ms-WPBody a:link { color: rgb(0, 114, 188); text-decoration: none; }
+.ms-WPBody a:visited { color: rgb(177, 0, 105); text-decoration: none; }
+.ms-WPBody a:hover { text-decoration: underline; }
+.ms-WPBody td { font-size: 8pt; font-family: verdana,arial,helvetica,sans-serif; }
+.ms-SrvMenuUI { display: none; }
+html { min-height: 100%; }
+body { font-family: Verdana,Arial,sans-serif; font-size: 8pt; color: rgb(103, 103, 103); background-color: rgb(255, 255, 255); margin: 0px; padding: 0px; }
+body.v4master { height: 100%; width: 100%; overflow: hidden; }
+body #aspnetForm { height: 100%; }
+a:link { color: rgb(0, 114, 188); text-decoration: none; }
+a:visited { color: rgb(177, 0, 105); text-decoration: none; }
+.s4-pr { width: 100%; }
+.s4-widecontentarea { width: 100%; }
+.s4-lp, .s4-lpi { padding: 2px 10px 2px 5px; }
+.s4-die { display: none; }
+.ms-hidden, a.ms-skip, a.ms-skip:hover, a.ms-skip:visited, a.ms-TurnOnAcc, a.ms-SkiptoMainContent, a.ms-SkiptoNavigation { position: absolute; top: -2000px; width: 1px; height: 1px; overflow: hidden; z-index: 3; overflow-wrap: normal; }
+a.ms-skip:active, a.ms-skip:focus, a.ms-TurnOnAcc:active, a.ms-TurnOnAcc:focus, a.ms-TurnOffAcc, a.ms-SkiptoMainContent:active, a.ms-SkiptoMainContent:focus, a.ms-SkiptoNavigation:active, a.ms-SkiptoNavigation:focus { position: absolute; top: 2px; width: auto; height: auto; background-color: white; border-color: black; border-width: 1px; border-style: solid; color: black; padding: 2px 4px; z-index: 12; }
+a.ms-skip, a.ms-TurnOnAcc { left: 2px; }
+a.ms-TurnOffAcc { right: 150px; }
+a.ms-SkiptoMainContent { right: 2px; }
+a.ms-SkiptoNavigation { right: 50%; }
+body #s4-ribbonrow { min-height: 43px; background-color: rgb(33, 55, 76); overflow-y: hidden; }
+body #s4-workspace { overflow-y: scroll; overflow-x: auto; position: relative; left: 0px; }
+body #s4-bodyContainer { min-width: 760px; }
+body #MSO_ContentTable { position: relative; }
+.s4-signInLink { margin: 0px 10px; color: rgb(255, 255, 255) ! important; }
+:first-child + html[dir="rtl"] .s4-trc-container-menu { float: left; }
+.s4-socialdata-notif { text-align: left; }
+.s4-signInLink { margin: 0px 10px; }
+.s4-title { padding: 0px 0px 0px 10px; margin: 0px; min-height: 64px; background: rgb(249, 249, 249) url('bgximg.png') repeat-x scroll 0px -1023px; overflow-wrap: break-word; overflow-x: hidden; }
+.s4-title-inner { min-height: 64px; }
+.s4-titletable { border: 0px none; height: 64px; width: 100%; font-family: Verdana,Arial,sans-serif; font-size: 8pt; }
+.s4-titlelogo { padding: 12px 10px 12px 0px; text-align: center; vertical-align: middle; }
+.s4-titlelogo > img, .s4-titlelogo > a > img { vertical-align: middle; }
+.s4-titletext { width: 100%; vertical-align: middle; unicode-bidi: embed; }
+.s4-title h1, .s4-title h2 { font-size: 1.4em; font-weight: normal; display: inline; padding: 0px; margin: 0px; }
+.s4-title h1 a, .s4-title h2 a { color: rgb(0, 55, 89); display: inline-block; }
+.s4-title h1 a:hover, .s4-title h2 a:hover { text-decoration: underline; }
+.s4-title h2 { color: rgb(93, 104, 120); }
+.s4-titlesep { vertical-align: middle; }
+.s4-title .s4-pagedescription, .s4-title .s4uniqpermdescription { margin-top: 6px; font-size: 1em; color: rgb(93, 104, 120); font-weight: normal; }
+:first-child + html .ms-ltviewselectormenuheader .ms-viewselector, :first-child + html .ms-ltviewselectormenuheader .ms-viewselectorhover { padding-top: 0px; vertical-align: middle; }
+:first-child + html .ms-ltviewselectormenuheader .ms-viewselector-arrow { margin-top: 2px; }
+:first-child + html .s4-help { margin: 3px 4px 0px ! important; vertical-align: baseline; padding-bottom: 2px; }
+:first-child + html .s4-search > table { float: none; display: inline; }
+body #s4-mainarea { float: left; clear: both; }
+body #s4-leftpanel { width: 155px; float: left; }
+body #s4-leftpanel-content { padding: 0px 0px 5px; background-color: rgb(252, 252, 252); border-style: solid; border-color: rgb(219, 221, 222); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-width: 0px 1px 1px 0px; }
+.ms-quicklaunchouter { margin: 0px; }
+.s4-ql, .s4-specialNavLinkList { list-style-type: none; margin: 0px 0px 20px; padding: 0px; }
+.s4-specialNavLinkList { margin: 0px; border-top: 1px solid rgb(219, 221, 222); padding-top: 5px; }
+.s4-ql li, .s4-specialNavLinkList li { font-weight: normal; min-height: 19px; }
+.s4-ca { background: rgb(255, 255, 255) none repeat scroll 0% 0%; margin-left: 155px; margin-right: 0px; min-height: 324px; }
+.s4-ba { padding: 0px 0px 5px; }
+body #pageStatusBar { display: none; border-style: solid; border-width: 1px 0px; padding: 4px 5px 5px 10px; font-family: verdana; font-size: 1em; }
+.s4-status-s1 { background: rgb(201, 215, 230) url('bgximg.png') repeat-x scroll 0px -209px; color: rgb(59, 70, 82); border-color: rgb(170, 175, 190); }
+.s4-wpcell-plain .s4-wpTopTable { border: medium none; }
+:first-child + html span.ms-cui-ctl .ms-cui-ctl-a1, :first-child + html span.ms-cui-ctl .ms-cui-ctl-a2 { display: inline-block; float: none; }
+:first-child + html .ms-cui-dd-text, :first-child + html .ms-cui-cb-input, :first-child + html .ms-cui-dd-arrow-button { display: inline-block; float: none; }
+:first-child + html .ms-cui-spn-txtbx, :first-child + html .ms-cui-spn-arwbx { display: inline-block; float: none; }
+:first-child + html .ms-cui-rtl ul.ms-cui-menusection-items, :first-child + html .ms-cui-rtl .ms-cui-smenu-inner, :first-child + html .ms-cui-rtl .ms-cui-menusection, :first-child + html .ms-cui-rtl .ms-cui-ctl-menu {  }
+:first-child + html[dir="rtl"] .menu-horizontal { direction: ltr; }
+:first-child + html[dir="rtl"] .menu-horizontal .menu-item { direction: rtl; }
+:first-child + html[dir="rtl"] .menu-horizontal li.static { float: none; display: inline; }
+:first-child + html[dir="rtl"] .menu-horizontal li.static .additional-background {  }
+/* ::::: http://ofertypracy.pwr.edu.pl/CSS/cookie.css ::::: */
+
+/* ::::: http://ofertypracy.pwr.edu.pl/CSS/DSP.css ::::: */
+
+body { width: 100% ! important; overflow: auto ! important; }
+form { width: 100% ! important; margin-left: auto; margin-right: auto; }
+#s4-workspace { width: 100% ! important; height: auto; overflow: visible ! important; }
+#s4-bodyContainer { width: 100% ! important; height: auto; }
+#s4-mainarea { width: 964px ! important; }
+#s4-statusbarcontainer { width: 960px; }
+.s4-specialNavLinkList { visibility: hidden ! important; background-color: white ! important; }
+body #s4-leftpanel { width: 200px ! important; float: left; }
+#s4-leftpanel { border-style: none ! important; width: 200px ! important; margin: 0px ! important; border-width: 0px ! important; }
+body #s4-leftpanel-content { width: 200px ! important; margin: 0px ! important; }
+#s4-leftpanel-content { border-style: none ! important; border-width: 0px ! important; width: 200px ! important; }
+div#MSO_ContentTable.s4-ca.s4-ca-dlgNoRibbon { vertical-align: text-top ! important; height: 100% ! important; }
+#s4-ribbonrow { min-height: 0px ! important; height: auto ! important; }
+.s4-titletext { visibility: hidden ! important; }
+.s4-title { height: 175px; width: 970px; background-color: white ! important; }
+body #s4-titlerow { width: 970px ! important; background-color: white ! important; }
+.s4-title-inner { background-image: url('htlo.gif'); height: 175px; }
+.s4-ca { margin-left: 0px ! important; margin-right: 0px; vertical-align: text-top ! important; }
+#ctl00_onetidProjectPropertyTitleGraphic { margin-left: 48px; }
+#ctl00_onetidHeadbnnr2 { margin-top: 35px; }
+.ms-WPBody { width: 554px; }
+.s4-signInLink { color: rgb(149, 36, 21) ! important; }
+.JobHeader { color: rgb(0, 114, 188); text-transform: uppercase; font-size: 14px; font-weight: bold; }
+.JobHeader2 { color: rgb(0, 114, 188); text-transform: uppercase; font-size: 13px; }
+.JobLabel { color: black; font-size: 11px; font-weight: bold; }
+.JobContentLabel { color: gray; font-size: 11px; }
+/* ::::: http://ofertypracy.pwr.edu.pl/CSS/SubMenu.css ::::: */
+
+ul.naukowe1 { list-style-image: url('strz.png'); }
+ul.najnowsze1 { list-style-image: url('strz.png'); }
+ul.inne1 { list-style-image: url('strz.png'); }
+ul.fundusze { list-style-image: url('strz.png'); }
+ul.oferty { list-style-type: none; list-style-image: none; margin-left: -20px; padding-top: 3px; }
+.a2 { font-size: 12px; color: black ! important; padding-top: 3px; padding-right: 4px; padding-bottom: 3px; }
+.a2:hover { font-size: 12px; color: rgb(166, 166, 166) ! important; padding-top: 3px; padding-right: 4px; padding-bottom: 3px; }
+.a3 { font-size: 11px; color: black ! important; }
+.a3:hover { font-size: 11px; color: rgb(166, 166, 166) ! important; }
+#menu { list-style: outside none none; width: 100%; height: 30px; padding: 0px; margin: 0px; background-color: rgb(149, 36, 21); border-width: 0px; }
+#menu li { float: left; display: block; text-align: center; position: relative; font-size: 11px; }
+li.main1 { color: white ! important; height: 30px; width: 150px; position: relative; top: 7px; }
+li.main1:hover { color: white ! important; height: 23px; width: 150px; background-color: rgb(183, 54, 33); position: relative; margin-top: -7px; padding-top: 7px; }
+li.main2 { color: white ! important; height: 30px; width: 180px; position: relative; top: 7px; }
+li.main2:hover { color: white ! important; height: 23px; width: 180px; background-color: rgb(183, 54, 33); position: relative; margin-top: -7px; padding-top: 7px; }
+li.main3 { color: white ! important; height: 23px; width: 80px; position: relative; padding-top: 7px; }
+li.main3:hover { color: white ! important; height: 23px; width: 80px; background-color: rgb(183, 54, 33); position: relative; padding-top: 7px; }
+.menuLink1 { color: white ! important; }
+.menuLink2 { color: white ! important; }
+.menuLink3 { color: white ! important; }
+#najnSt { height: 28px; }
+#inneSt { height: 28px; }
+#fundusze1 { height: 28px; }
+#fundusze2 { height: 28px; }
+#naukKonk {  }
+#naukBKonk { height: 40px; padding-top: 11px; }
+ul#oferty1.oferty li { height: 26px; margin-top: 8px; }
+ul#oferty2 { height: 60px; }
+ul#oferty2.oferty li { height: 30px; margin-top: 5px; }
+/* ::::: http://ofertypracy.pwr.edu.pl/CSS/Projekty.css ::::: */
+

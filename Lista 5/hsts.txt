@@ -1,0 +1,2 @@
+10. Czym jest HSTS?
+HTTP Strict Transport Security to mechanizm zabezpieczaj¹cy przed downgrade attacks. Polityka HSTS nie pozwala na niezabezpieczony protokó³ HTTP. W nag³ówku odpowiedzi od serwera, oprócz informacji o stosowaniu HSTS, serwer przesy³a tak¿e informacjê o dozwolonej d³ugoœci bezpiecznego po³¹czenia.
